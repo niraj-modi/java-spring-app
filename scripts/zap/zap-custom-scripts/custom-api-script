@@ -19,9 +19,9 @@ cp "${DEFINITION_FILE}" "${SWAGGER_JSON_FILE}"
 
 # resolve any schema $refs to form a complete all-in-one swagger doc
 echo "Installing json-refs"
-npm install -g json-refs
+#npm install -g json-refs
 echo "Resolving schema refs in swagger"
-json-refs resolve "${SWAGGER_JSON_FILE}" > _resolved.json
+#json-refs resolve "${SWAGGER_JSON_FILE}" > _resolved.json
 
 # Add a global exclusion to prevent a false positive issue with this sample application like:
 # Unexpected Content-Type was returned
